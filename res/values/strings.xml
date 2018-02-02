@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calories Counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="food">
+        <item>Mee Siam</item>
+        <item>Kway Chup</item>
+        <item>Satay</item>
+        <item>Laksa</item>
+        <item>Nasi Lemak</item>
+        <item>Nothing</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fa8072"
+                android:onClick="onNextActivityClicked1"
+                android:text="Calories Calculator"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#C0C0C0"
+                android:onClick="onNextActivityClicked2"
+                android:text="Calories History"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FA8072"
+                android:onClick="onNextActivityClicked3"
+                android:text="Health Information"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#C0C0C0"
+                android:onClick="onNextActivityClicked4"
+                android:text="About Us"
+                android:textColor="#ffffff" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+       <TextView
+        android:id="@+id/idealWeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

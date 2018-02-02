@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="backToMainPage"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" >
+
+        <TableRow android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calculator" />
+        </TableRow>
+
+        <TableRow android:gravity="center" >
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Calories Calculator"
+                android:textColor="#FA8072"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Date"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/dateTB"
+                android:hint="DDMMYY"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Breakfast:"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/breakfast_spinner"
+                android:layout_width="wrap_content"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Lunch"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/lunch_spinner"
+                android:layout_width="wrap_content"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Dinner"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/dinner_spinner"
+                android:layout_width="wrap_content"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Current Weight:"
+                android:textSize="13sp" />
+            
+             <EditText
+                android:id="@+id/currentWeightTB"
+                android:hint="kg"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Calculate" />
+
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-10dp"
+                android:text="Change Date" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout_Contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableLayout>
+
+</LinearLayout>
